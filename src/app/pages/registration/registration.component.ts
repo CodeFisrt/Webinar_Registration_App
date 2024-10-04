@@ -25,7 +25,7 @@ export class RegistrationComponent {
 
 
   onRegister() {
-    this.http.post("https://freeapi.miniprojectideas.com/api/Webinar/CreateNewRegistration", this.registrationObj).subscribe((res:any)=>{
+    this.http.post("https://freeapi.gerasim.in/api/Webinar/CreateNewRegistration", this.registrationObj).subscribe((res:any)=>{
       if(res.result) {
         alert("Registration Successful");
       } else {
